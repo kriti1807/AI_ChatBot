@@ -1,0 +1,50 @@
+[
+  {
+    "issue": "wifi not connecting",
+    "category": "Network",
+    "keywords": ["wifi", "internet", "no connection", "network issue"],
+    "solution": "1. Restart your router and modem.\n2. Forget the WiFi network and reconnect.\n3. Check if Airplane mode is off.\n4. Verify IP settings are automatic.\n5. If issue persists, contact IT support."
+  },
+  {
+    "issue": "vpn not working",
+    "category": "Network",
+    "keywords": ["vpn", "secure connection", "remote access"],
+    "solution": "1. Check your internet connection.\n2. Disconnect and reconnect VPN.\n3. Verify your login credentials.\n4. Restart your system.\n5. Ensure VPN client is updated."
+  },
+  {
+    "issue": "password reset",
+    "category": "Account",
+    "keywords": ["password", "forgot password", "reset login"],
+    "solution": "1. Go to the password reset portal.\n2. Enter your username.\n3. Verify your identity using OTP.\n4. Create a new password.\n5. Log in again with updated credentials."
+  },
+  {
+    "issue": "laptop slow",
+    "category": "System",
+    "keywords": ["slow system", "lag", "performance issue"],
+    "solution": "1. Close unnecessary background applications.\n2. Restart your laptop.\n3. Check available storage space.\n4. Run antivirus scan.\n5. Disable startup programs if needed."
+  },
+  {
+    "issue": "email not syncing",
+    "category": "Email",
+    "keywords": ["email issue", "outlook not working", "mail sync"],
+    "solution": "1. Check internet connectivity.\n2. Refresh your mailbox.\n3. Log out and log back in.\n4. Verify email server settings.\n5. Re-add the email account if needed."
+  },
+  {
+    "issue": "software not installing",
+    "category": "Software",
+    "keywords": ["install error", "setup failed", "application issue"],
+    "solution": "1. Check if you have admin rights.\n2. Ensure enough disk space is available.\n3. Disable antivirus temporarily.\n4. Run installer as administrator.\n5. Re-download setup file if corrupted."
+  },
+  {
+    "issue": "printer not working",
+    "category": "Hardware",
+    "keywords": ["printer", "print error", "not printing"],
+    "solution": "1. Check printer power and connection.\n2. Ensure correct printer is selected.\n3. Restart printer and system.\n4. Clear print queue.\n5. Update or reinstall printer drivers."
+  },
+  {
+    "issue": "system not booting",
+    "category": "Hardware",
+    "keywords": ["boot issue", "system not starting", "black screen"],
+    "solution": "1. Check power supply and cables.\n2. Remove external devices.\n3. Restart system.\n4. Try safe mode.\n5. Contact IT support if issue persists."
+  }
+]
