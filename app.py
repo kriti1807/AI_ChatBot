@@ -2,86 +2,24 @@ import streamlit as st
 import json
 import anthropic
 import os
-
-# =========================
-# 🎨 IMPROVED MODERN UI (READABLE)
-# =========================
 st.markdown("""
-    <style>
-    /* Background */
-    .stApp {
-        background: linear-gradient(135deg, #020617, #0f172a, #0ea5e9);
-        color: white;
-    }
+<style>
 
-    /* Main content container (glass effect) */
-    .block-container {
-        background: rgba(15, 23, 42, 0.85);
-        padding: 2rem;
-        border-radius: 15px;
-        backdrop-filter: blur(10px);
-    }
+header[data-testid="stHeader"] {
+    background: transparent !important;
+}
 
-    /* Headings & text */
-    h1, h2, h3, h4, h5, h6, p, label {
-        color: #f1f5f9 !important;
-    }
+/* Remove top white toolbar spacing */
+div[data-testid="stToolbar"] {
+    background: transparent !important;
+}
 
-    /* Input box */
-    .stTextInput input {
-        background-color: #020617 !important;
-        color: white !important;
-        border-radius: 10px;
-        border: 1px solid #38bdf8;
-        padding: 10px;
-    }
+/* Optional: remove extra top padding */
+.block-container {
+    padding-top: 1rem !important;
+}
 
-    /* Dropdown (FIXED VISIBILITY) */
-    div[data-baseweb="select"] {
-        background-color: #020617 !important;
-        color: white !important;
-        border-radius: 10px !important;
-        border: 1px solid #38bdf8 !important;
-    }
-
-    div[data-baseweb="select"] * {
-        color: white !important;
-    }
-
-    /* Dropdown menu options */
-    ul[role="listbox"] {
-        background-color: #020617 !important;
-        color: white !important;
-    }
-
-    /* Buttons */
-    .stButton button {
-        background: linear-gradient(135deg, #0ea5e9, #2563eb);
-        color: white;
-        border-radius: 12px;
-        border: none;
-        padding: 10px 20px;
-        font-weight: 600;
-    }
-
-    /* Sidebar FIX */
-    section[data-testid="stSidebar"] {
-        background-color: #020617 !important;
-        color: white !important;
-    }
-
-    section[data-testid="stSidebar"] * {
-        color: white !important;
-    }
-
-    /* Message boxes */
-    .stSuccess, .stWarning, .stInfo {
-        background-color: rgba(2, 6, 23, 0.9) !important;
-        color: white !important;
-        border-radius: 10px;
-    }
-
-    </style>
+</style>
 """, unsafe_allow_html=True)
 
 # =========================
