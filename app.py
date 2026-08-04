@@ -115,7 +115,7 @@ if query:
 # =========================
 # 🎟️ Ticket Option
 # =========================
-if st.button("📩 Raise IT Ticket"):
+if st.button("📩Kindly contact your IT agent"):
     st.success("Your request has been sent to the IT team.")
 
 # =========================
