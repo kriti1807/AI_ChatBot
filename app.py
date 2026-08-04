@@ -3,6 +3,64 @@ import json
 import anthropic
 import os
 
+st.markdown("""
+    <style>
+    .stApp {
+        background: linear-gradient(135deg, #020617, #0f172a, #0ea5e9);
+        color: white;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, label {
+        color: white !important;
+    }
+
+    /* Input box */
+    .stTextInput input {
+        background-color: #1e293b !important;
+        color: white !important;
+        border-radius: 8px;
+        border: 1px solid #0ea5e9;
+    }
+
+    /* Dropdown */
+    .stSelectbox div[data-baseweb="select"] {
+        background-color: #1e293b !important;
+        color: white !important;
+        border-radius: 8px;
+    }
+
+    /* Buttons */
+    .stButton button {
+        background: linear-gradient(135deg, #0ea5e9, #2563eb);
+        color: white;
+        border-radius: 10px;
+        border: none;
+        font-weight: 500;
+    }
+
+    /* Sidebar */
+    section[data-testid="stSidebar"] {
+        background-color: #020617;
+    }
+
+    /* Message boxes */
+    .stSuccess {
+        background-color: #1e293b !important;
+        color: white !important;
+    }
+
+    .stWarning {
+        background-color: #1e293b !important;
+        color: white !important;
+    }
+
+    .stInfo {
+        background-color: #1e293b !important;
+        color: white !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # =========================
 # 🔑 Claude API Key (from Streamlit secrets or local env)
 # =========================
