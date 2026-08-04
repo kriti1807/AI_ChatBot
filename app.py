@@ -3,61 +3,84 @@ import json
 import anthropic
 import os
 
+# =========================
+# 🎨 IMPROVED MODERN UI (READABLE)
+# =========================
 st.markdown("""
     <style>
+    /* Background */
     .stApp {
         background: linear-gradient(135deg, #020617, #0f172a, #0ea5e9);
         color: white;
     }
 
+    /* Main content container (glass effect) */
+    .block-container {
+        background: rgba(15, 23, 42, 0.85);
+        padding: 2rem;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+    }
+
+    /* Headings & text */
     h1, h2, h3, h4, h5, h6, p, label {
-        color: white !important;
+        color: #f1f5f9 !important;
     }
 
     /* Input box */
     .stTextInput input {
-        background-color: #1e293b !important;
+        background-color: #020617 !important;
         color: white !important;
-        border-radius: 8px;
-        border: 1px solid #0ea5e9;
+        border-radius: 10px;
+        border: 1px solid #38bdf8;
+        padding: 10px;
     }
 
-    /* Dropdown */
-    .stSelectbox div[data-baseweb="select"] {
-        background-color: #1e293b !important;
+    /* Dropdown (FIXED VISIBILITY) */
+    div[data-baseweb="select"] {
+        background-color: #020617 !important;
         color: white !important;
-        border-radius: 8px;
+        border-radius: 10px !important;
+        border: 1px solid #38bdf8 !important;
+    }
+
+    div[data-baseweb="select"] * {
+        color: white !important;
+    }
+
+    /* Dropdown menu options */
+    ul[role="listbox"] {
+        background-color: #020617 !important;
+        color: white !important;
     }
 
     /* Buttons */
     .stButton button {
         background: linear-gradient(135deg, #0ea5e9, #2563eb);
         color: white;
-        border-radius: 10px;
+        border-radius: 12px;
         border: none;
-        font-weight: 500;
+        padding: 10px 20px;
+        font-weight: 600;
     }
 
-    /* Sidebar */
+    /* Sidebar FIX */
     section[data-testid="stSidebar"] {
-        background-color: #020617;
+        background-color: #020617 !important;
+        color: white !important;
+    }
+
+    section[data-testid="stSidebar"] * {
+        color: white !important;
     }
 
     /* Message boxes */
-    .stSuccess {
-        background-color: #1e293b !important;
+    .stSuccess, .stWarning, .stInfo {
+        background-color: rgba(2, 6, 23, 0.9) !important;
         color: white !important;
+        border-radius: 10px;
     }
 
-    .stWarning {
-        background-color: #1e293b !important;
-        color: white !important;
-    }
-
-    .stInfo {
-        background-color: #1e293b !important;
-        color: white !important;
-    }
     </style>
 """, unsafe_allow_html=True)
 
